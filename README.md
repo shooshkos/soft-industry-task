@@ -81,12 +81,6 @@ You can find the Serenity reports in the following directory of the Project.
 
 In the serenity directory, open 'index.html' file to view the report.
 
-### Finally, the source code, please refer
-
-* Github (https://github.com/cvenkatreddy/restassured-serenity-cucumber) with circleci integration(Config.yml)
-* GitLab (https://gitlab.com/cvenkatreddy/restassured-serenity-cucumber) with gitlab integration (.gitlab-ci.yml)
-
-- 
 # NOTES------------------------------
 # NOTES END--------------------------
 
