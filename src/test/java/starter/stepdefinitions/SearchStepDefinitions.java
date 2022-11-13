@@ -29,4 +29,9 @@ public class SearchStepDefinitions {
         restAssuredThat(response -> response.body(JsonSchemaValidator.
                 matchesJsonSchema(new File("src/test/resources/schema.json"))));
     }
+
+    @When("I call POST method on my endpoint")
+    public void iCallPOSTMethodOnMyEndpoint() {
+        SerenityRest.given().post(BASE_URL + "testing-data");
+    }
 }
