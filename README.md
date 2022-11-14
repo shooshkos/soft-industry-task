@@ -76,12 +76,23 @@ $ mvn clean verify
 You can find the Serenity reports in the following directory of the Project.
 
 ```sh
-\target\site\serenity\
+\target\site\serenity\ -> index.html
 ```
 
 In the serenity directory, open 'index.html' file to view the report.
 
-# NOTES------------------------------
-# NOTES END--------------------------
+#### NOTES------------------------------
+After running the pipeline in GitLab, follow this link to download the test reports:  
+![alt text] (https://ibb.co/L145DJ3)
+#### NOTES END--------------------------
 
-
+# What was changed/modified
+```Gherkin
+  - test/java/api directory was added for generic steps implementation for api calls (no need to use it in the case of my task) 
+  - CarsAPI class was removed (no need to use it)
+  - SearchStepDefinitions class was modified for the exact tests you'll find inside post_product.feature
+  - 10 scenarios were added to the feature file
+  - schema.json was added for the JSON responses validation (to check the response body for the valid products search)
+  - more dependencies were added to pom.xml
+  - test/java/utils/Constants.java class was added in case of new requests needed to be tested for our endpoint with different methods included there
+```
